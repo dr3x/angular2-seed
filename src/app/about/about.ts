@@ -3,7 +3,12 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'about',
   styleUrls: ['./about.css'],
-  templateUrl: './about.html'
+  //templateUrl: './about.html'
+  template: `
+  <h3>About Component</h3>
+  <p>{{description}}</p>
+  `
 })
 export class About {
+  description = "This is the *about* component";
 }
